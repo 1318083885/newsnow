@@ -36,14 +36,6 @@ if (process.env.VERCEL) {
   //     cache: []
   //   },
   // }
-  nitroOption.database = {
-    default: {
-      connector: "mysql",
-      options: {
-        url: process.env.DATABASE_URL,
-      },
-    },
-  }
 } else if (process.env.CF_PAGES) {
   nitroOption.preset = "cloudflare-pages"
   nitroOption.database = {
