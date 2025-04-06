@@ -38,7 +38,7 @@ if (process.env.VERCEL) {
   // }
   nitroOption.database = {
     default: {
-      connector: "postgresql",
+      connector: "mysql",
       options: {
         url: process.env.DATABASE_URL,
       },
